@@ -1,0 +1,114 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     background: url('/img/backGd.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.image{
+   
+    flex: 0 0 50%;
+    height: 80vh;
+    border-radius: 10px;
+    background: url('/img/bgd-0.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.btn{
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: rgba(188, 160, 2, 0.9);
+    color: rgb(41, 37, 37);
+    font-size: 2rem;
+    border: none;
+    display: inline-block;
+
+}
+.btn:hover{
+    box-shadow: 2px 2px 2px 2px rgb(205, 202, 202);
+    color: white;
+}
+.btn:active{
+    background-color: bisque;
+    color: rgb(53, 53, 3);
+}
+#prevbtn{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+#nextbtn {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translate(50%, 50%);
+}
+
+@media (max-width:426px) {
+    body {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('/img/backGd.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 0;
+        }
+    
+        .image {
+    
+            flex: 0 0 60%;
+            height: 80vh;
+            border-radius: 10px;
+            background: url('/img/bgd-0.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+    
+        .btn {
+            padding: 1rem;
+            border-radius: 20px;
+            background-color: rgba(188, 160, 2, 0.9);
+            color: rgb(41, 37, 37);
+            font-size: 0.6rem;
+            border: none;
+            display: inline-block;
+    
+        }
+    
+        .btn:hover {
+            box-shadow: 2px 2px 2px 2px rgb(205, 202, 202);
+            color: white;
+        }
+    
+        .btn:active {
+            background-color: bisque;
+            color: rgb(53, 53, 3);
+        }
+    
+        #prevbtn {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    
+        #nextbtn {
+            position: absolute;
+            right: 0;
+            top: 38%;
+            transform: translate(50%, 50%);
+        }
+    
+}
