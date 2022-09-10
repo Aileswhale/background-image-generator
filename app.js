@@ -1,35 +1,35 @@
-// const background = document.querySelector('.image')
-// const prevBtn = document.querySelector('#prevbtn')
-// const nextBtn = document.querySelector('#nextbtn')
+const background = document.querySelector('.image')
+ const prevBtn = document.querySelector('#prevbtn')
+ const nextBtn = document.querySelector('#nextbtn')
 
-// let count = 0;
+ let count = 0;
 
-// const next = ()=>{
-// if (count === 9) {
-//     count = -1
-// }
-//  count ++;
-//  background.style.backgroundImage = `url(img/bgd-${count}.jpg)`;
+ const next = ()=>{
+ if (count === 9) {
+     count = -1
+ }
+  count ++;
+  background.style.backgroundImage = `url(img/bgd-${count}.jpg)`;
 
-//  background.animate([{opacity: '0.2'},{opacity:'1.0'}], {duration: 1000, fill: 'forwards'})
-// }
+  background.animate([{opacity: '0.2'},{opacity:'1.0'}], {duration: 1000, fill: 'forwards'})
+ }
 
-// nextBtn.addEventListener('click', next)
+ nextBtn.addEventListener('click', next)
 
-// const prev = ()=>{
-// if (count === 0) {
-//     count = 10
-// }
-//  count --;
-//  background.style.backgroundImage = `url(img/bgd-${count}.jpg)`;
-//  background.animate([{opacity: '0.2'},{opacity:'1.0'}], {duration: 1000, fill: 'forwards'})
-// }
+ const prev = ()=>{
+ if (count === 0) {
+     count = 10
+ }
+  count --;
+ background.style.backgroundImage = `url(img/bgd-${count}.jpg)`;
+  background.animate([{opacity: '0.2'},{opacity:'1.0'}], {duration: 1000, fill: 'forwards'})
+ }
 
-// prevBtn.addEventListener('click', prev)
+ prevBtn.addEventListener('click', prev)
 
 //ANOTHER METHOD (ARRAR)
 
-const background = document.querySelector('.image')
+/*const background = document.querySelector('.image')
 const prevBtn = document.querySelector('#prevbtn')
 const nextBtn = document.querySelector('#nextbtn')
 let image = [
@@ -81,7 +81,7 @@ background.style.backgroundImage = image[random].name
  background.animate([{opacity: '0.2'},{opacity:'1.0'}], {duration: 1000, fill: 'forwards'})
 }
 
-prevBtn.addEventListener('click', prev)
+prevBtn.addEventListener('click', prev)*/
 
 
 
