@@ -11,7 +11,7 @@ const background = document.querySelector('.image')
   count ++;
   background.style.backgroundImage = `url(img/bgd-${count}.jpg)`;
 
-  background.animate([{opacity: '0.2'},{opacity:'1.0'}], {duration: 1000, fill: 'forwards'})
+  background.animate([{opacity: '0.2'},{opacity:'1.0'}], {duration: 2000, fill: 'forwards'})
  }
 
  nextBtn.addEventListener('click', next)
@@ -22,7 +22,7 @@ const background = document.querySelector('.image')
  }
   count --;
  background.style.backgroundImage = `url(img/bgd-${count}.jpg)`;
-  background.animate([{opacity: '0.2'},{opacity:'1.0'}], {duration: 1000, fill: 'forwards'})
+  background.animate([{opacity: '0.2'},{opacity:'1.0'}], {duration: 2000, fill: 'forwards'})
  }
 
  prevBtn.addEventListener('click', prev)
